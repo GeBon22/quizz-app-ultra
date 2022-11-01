@@ -1,0 +1,16 @@
+p {
+  text-align: center;
+}
+
+.card__body {
+  border: solid 1px white;
+}
+
+.card__question {
+  color: red;
+  text-decoration: underline;
+}
+
+.card__answer {
+  color: green;
+}
