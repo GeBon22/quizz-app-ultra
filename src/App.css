@@ -1,9 +1,11 @@
 .App {
   text-align: center;
+  box-sizing: border-box;
+  background-color: rgb(151, 62, 224);
 }
 
 .App__main {
-  background-color: lightblue;
+  background-color: #b46ce4;
 }
 
 .App-logo {

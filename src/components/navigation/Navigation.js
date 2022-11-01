@@ -2,10 +2,10 @@ import "./Navigation.css";
 
 export default function Navigation() {
   return (
-    <ul class="nav">
+    <ul className="nav">
       <li>Home</li>
-      <li>About</li>
-      <li>Service</li>
+      <li>Profile</li>
+      <li>Bookmarks</li>
     </ul>
   );
 }

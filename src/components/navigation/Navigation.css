@@ -1,14 +1,19 @@
+ul {
+  padding: 0;
+}
+
 li {
   text-align: center;
   list-style-type: none;
   font-size: larger;
+  cursor: pointer;
 }
 
 .nav {
   color: white;
-  background-color: rgb(223, 130, 130);
+  background-color: #601790;
   padding: 30px;
-  border: 1px solid gray;
+  border: 1px solid white;
   border-radius: 10px;
   display: grid;
   grid-auto-flow: column;

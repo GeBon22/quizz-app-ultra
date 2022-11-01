@@ -1,6 +1,7 @@
 .Header__body {
-  background-color: rgb(61, 171, 207);
   padding: 30px;
+  color: white;
+  background-color: rgb(151, 62, 224);
 }
 
 h1 {

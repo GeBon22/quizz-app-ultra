@@ -4,13 +4,15 @@ p {
 
 .card__body {
   border: solid 1px white;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .card__question {
-  color: red;
+  color: white;
   text-decoration: underline;
 }
 
 .card__answer {
-  color: green;
+  color: white;
 }
