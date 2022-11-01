@@ -7,6 +7,9 @@ li {
 .nav {
   color: white;
   background-color: rgb(223, 130, 130);
-  display: flex;
-  flex-direction: column;
+  padding: 30px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  display: grid;
+  grid-auto-flow: column;
 }
