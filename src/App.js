@@ -12,7 +12,8 @@ function App() {
       question: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit?',
       answer:
         'Voluptate id quis repudiandae, numquam molestias quae, aperiam quam sunt fuga at et sit vero unde quo dolores libero repellat, ut totam.',
-    },
+      bookmark: false,
+      },
   ])
 
 
