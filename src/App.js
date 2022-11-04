@@ -6,6 +6,9 @@ import { useState } from "react";
 const { default: QuizCard } = require('./components/card/Quizcard')
 
 function App() {
+  const [page, setPage] = useState("home");
+  const handleClickPage = (pageName) => {setPage(pageName);};
+
   const [cards, setCards] = useState([
     {
       id: 1,
@@ -16,23 +19,23 @@ function App() {
       },
   ])
 
-
+  function addCard(card) {setCards([...cards, card])}
+  
   return (
     <div className="App">
       <Header />
       <main className="App__main">
-      {cards.map(({ id, question, answer }) => (
-        <QuizCard key={id} question={question} answer={answer} />
+      {cards.map(({ id, question, answer, bookmark }) => (
+        <QuizCard key={id} question={question} answer={answer} bookmark={bookmark} />
       ))}
          </main>
          <QuizCard />
          <QuizCard />
          <QuizCard />
-        <footer>
         <Navigation />
-        </footer>
     </div>
   );
+
 }
 
 export default App;
