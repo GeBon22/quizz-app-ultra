@@ -6,6 +6,7 @@ export default function Navigation() {
       <li>Home</li>
       <li>Profile</li>
       <li>Bookmarks</li>
+      <li>Add New</li>
     </ul>
   );
 }
