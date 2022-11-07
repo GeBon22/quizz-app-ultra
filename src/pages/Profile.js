@@ -1,6 +1,8 @@
+import "./Profile.css";
+
 export default function Profile(){
     return (
-      <div>
+      <div className="profile">
         <h3>My Profile</h3>
       </div>
     );

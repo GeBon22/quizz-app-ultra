@@ -18,6 +18,7 @@ export default function Form({ onSubmitCard }) {
   
     return (
       <div className="form" onSubmit={handleSubmit}>
+        <h3>Add your question card here:</h3>
         <label>
           Question:
           <textarea
@@ -34,7 +35,7 @@ export default function Form({ onSubmitCard }) {
             name="answer"
           />
         </label>
-        <button>Add</button>
+        <button className="button">Add</button>
       </div>
     )
   }
