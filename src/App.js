@@ -1,7 +1,7 @@
 import "./App.css";
 import Header from "./components/header/Header";
 import Navigation from "./components/navigation/Navigation";
-import Form from "./pages/Form";
+//import Form from "./pages/Form";
 import { useState } from "react";
 //import Card from "./components/card/Quizcard";
 const { default: QuizCard } = require('./components/card/Quizcard')
