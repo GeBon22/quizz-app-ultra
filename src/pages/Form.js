@@ -18,7 +18,7 @@ export default function Form({ onSubmitCard }) {
   
     return (
       <div className="form" onSubmit={handleSubmit}>
-        <h3>Add your question card here:</h3>
+        <h2>Add your question card here:</h2>
         <label>
           Question:
           <textarea
