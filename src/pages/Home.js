@@ -1,7 +1,6 @@
 import "./Home.css";
 import { useState } from "react";
 const { default: QuizCard } = require('../components/card/Quizcard.js')
-//import { useState } from "react";
 //import { Card } from "../components/card/Quizcard"
 
 
@@ -39,11 +38,11 @@ export default function Home() {
   return (
     <div className="home">
     <h2>Home</h2>
-    <main className="App__card-grid">
-      {cards.map(({ id, question, answer, bookmark, onSubmitCard }) => (
-        <QuizCard key={id} question={question} answer={answer} bookmark={bookmark} onSubmitCard={addCard} />
+    <div className="App__card-grid">
+      {cards.map(({ id, question, answer, bookmark }) => (
+        <QuizCard key={id} question={question} answer={answer} bookmark={bookmark} onSubmitCard={addCard}/>
       ))}
-         </main>
+    </div>
     </div>
   )
 }
