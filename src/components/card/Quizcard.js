@@ -13,3 +13,5 @@ export default function Card( {question, answer}) {
     </div>
   );
 }
+
+//TODO: add-function for quizcards

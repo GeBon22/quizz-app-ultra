@@ -1,3 +1,15 @@
 .home {
     color: white;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: rgb(30, 12, 45);
 }
+
+.App__card-grid {
+    display: grid;
+    gap: 30px;
+    padding: 20px;
+    align-content: center;
+
+  }
+//TODO: bottom white border?!
