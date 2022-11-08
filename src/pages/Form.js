@@ -2,7 +2,7 @@ import "./Form.css";
 import { useState } from "react";
 
 export default function Form({ onSubmitCard }) {
-    const [formData, setFormData] = useState({ question: '', answer: '' })
+    const [formData, setFormData] = useState({ question: '', answer: '' });
 
     function handleChange(event) {
         setFormData({
@@ -13,15 +13,16 @@ export default function Form({ onSubmitCard }) {
     
       function handleSubmit(event) {
         event.preventDefault()
-        onSubmitCard(formData)
+        onSubmitCard([...formData, event.target.value] )
       }
-  
+
     return (
       <div className="form" onSubmit={handleSubmit}>
-        <h2>Add your question card here:</h2>
+        <h2>Create your question card here:</h2>
         <label>
           Question:
-          <textarea
+          <input
+            type="text"
             value={formData.question}
             onChange={handleChange}
             name="question"
@@ -29,13 +30,14 @@ export default function Form({ onSubmitCard }) {
         </label>
         <label>
           Answer:
-          <textarea
+          <input
+            type="text"
             value={formData.answer}
             onChange={handleChange}
             name="answer"
           />
         </label>
-        <button className="button">Add</button>
+        <button className="button" onClick={handleSubmit}>Submit card</button>
       </div>
     )
   }

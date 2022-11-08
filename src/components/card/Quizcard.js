@@ -8,7 +8,7 @@ export default function Card( {question, answer}) {
   return (
     <div className="card__body">
       <p className="card__question">{question}</p>
-      <button className="button" onClick={() => setShowAnswer(!showAnswer)}>Show answer</button>
+      <button className="button" onClick={() => setShowAnswer(!showAnswer)}>{!showAnswer ? "Show Answer" : "Hide Answer"}</button>
       {showAnswer && <p className="card__answer">{answer}</p>}
     </div>
   );

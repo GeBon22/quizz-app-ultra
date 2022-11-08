@@ -6,7 +6,6 @@ const { default: QuizCard } = require('../components/card/Quizcard.js')
 
 
 
-
 export default function Home() {
   const [cards, setCards] = useState([
     {
@@ -32,12 +31,17 @@ export default function Home() {
           },
   ])
 
+  function addCard(card) {
+    setCards([...cards, card])
+  }
+
+
   return (
     <div className="home">
     <h2>Home</h2>
     <main className="App__card-grid">
-      {cards.map(({ id, question, answer, bookmark }) => (
-        <QuizCard key={id} question={question} answer={answer} bookmark={bookmark} />
+      {cards.map(({ id, question, answer, bookmark, onSubmitCard }) => (
+        <QuizCard key={id} question={question} answer={answer} bookmark={bookmark} onSubmitCard={addCard} />
       ))}
          </main>
     </div>
