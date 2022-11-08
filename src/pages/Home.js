@@ -35,7 +35,7 @@ export default function Home() {
   return (
     <div className="home">
     <h2>Home</h2>
-    <main className="App__main">
+    <main className="App__card-grid">
       {cards.map(({ id, question, answer, bookmark }) => (
         <QuizCard key={id} question={question} answer={answer} bookmark={bookmark} />
       ))}

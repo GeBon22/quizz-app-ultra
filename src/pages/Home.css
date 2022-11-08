@@ -6,3 +6,10 @@
     height: 100vh;
     width: 100vw;
 }
+.App__card-grid {
+    display: grid;
+    gap: 30px;
+    padding: 20px;
+    align-items: center;
+  }
+//TODO: bottom white border?!
